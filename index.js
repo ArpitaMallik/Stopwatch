@@ -28,6 +28,7 @@ pause.addEventListener("click", ()=>{
 });
 reset.addEventListener("click", ()=>{
     paused = true;
+    clearInterval(intervalID);
     startTime = 0;
     elapsedTime = 0;
     currentTime = 0;
